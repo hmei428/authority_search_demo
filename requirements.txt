@@ -1,0 +1,15 @@
+# Web框架
+flask>=3.0.0
+flask-cors>=4.0.0
+
+# HTTP请求
+requests>=2.31.0
+
+# OpenAI客户端（用于调用内部LLM）
+openai>=1.12.0
+
+# 注意：pandas和tqdm在web服务中不需要，只在批量处理脚本中使用
+# 如需批量处理，可手动安装: pip install pandas tqdm
+
+# 其他工具
+python-dotenv>=1.0.0

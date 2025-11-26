@@ -1,0 +1,782 @@
+{
+  "www.gov.cn": {
+    "score": 4,
+    "reason": "中国政府官网"
+  },
+  "www.beijing.gov.cn": {
+    "score": 4,
+    "reason": "北京市政府"
+  },
+  "www.shanghai.gov.cn": {
+    "score": 4,
+    "reason": "上海市政府"
+  },
+  "www.pku.edu.cn": {
+    "score": 4,
+    "reason": "北京大学"
+  },
+  "www.tsinghua.edu.cn": {
+    "score": 4,
+    "reason": "清华大学"
+  },
+  "www.fudan.edu.cn": {
+    "score": 4,
+    "reason": "复旦大学"
+  },
+  "www.zju.edu.cn": {
+    "score": 4,
+    "reason": "浙江大学"
+  },
+  "support.microsoft.com": {
+    "score": 4,
+    "reason": "Microsoft官方支持"
+  },
+  "developer.mozilla.org": {
+    "score": 4,
+    "reason": "MDN官方文档"
+  },
+  "docs.python.org": {
+    "score": 4,
+    "reason": "Python官方文档"
+  },
+  "nodejs.org": {
+    "score": 4,
+    "reason": "Node.js官网"
+  },
+  "www.xinhuanet.com": {
+    "score": 4,
+    "reason": "新华网"
+  },
+  "www.people.com.cn": {
+    "score": 4,
+    "reason": "人民网"
+  },
+  "www.chinanews.com.cn": {
+    "score": 4,
+    "reason": "中国新闻网"
+  },
+  "scholar.google.com": {
+    "score": 4,
+    "reason": "Google学术"
+  },
+  "www.ncbi.nlm.nih.gov": {
+    "score": 4,
+    "reason": "NCBI"
+  },
+  "www.nature.com": {
+    "score": 4,
+    "reason": "Nature"
+  },
+  "www.zhihu.com": {
+    "score": 3,
+    "reason": "知乎"
+  },
+  "www.csdn.net": {
+    "score": 3,
+    "reason": "CSDN"
+  },
+  "stackoverflow.com": {
+    "score": 3,
+    "reason": "Stack Overflow"
+  },
+  "wsjkw.jl.gov.cn": {
+    "score": 4,
+    "reason": "官方机构，权威可信"
+  },
+  "paper.people.com.cn": {
+    "score": 4,
+    "reason": "官方权威媒体平台"
+  },
+  "szyyj.gd.gov.cn": {
+    "score": 4,
+    "reason": "政府官方网站，可信度高"
+  },
+  "zhidao.baidu.com": {
+    "score": 3,
+    "reason": "百度旗下问答平台，知名度高且内容体系完整"
+  },
+  "www.huancui.gov.cn": {
+    "score": 4,
+    "reason": "政府官网，官方权威来源"
+  },
+  "wsjk.tj.gov.cn": {
+    "score": 4,
+    "reason": "政府官网，官方权威信息源"
+  },
+  "www.cma.org.cn": {
+    "score": 4,
+    "reason": "官方机构，权威可信"
+  },
+  "www.fh21.com.cn": {
+    "score": 2,
+    "reason": "小众企业站点，缺乏权威背书"
+  },
+  "m.baidu.com": {
+    "score": 4,
+    "reason": "百度搜索引擎官网，顶级权威"
+  },
+  "www.dayi.org.cn": {
+    "score": 3,
+    "reason": "行业门户，内容体系完整"
+  },
+  "www.thepaper.cn": {
+    "score": 3,
+    "reason": "主流新闻媒体，内容专业可信"
+  },
+  "mip.39yst.com": {
+    "score": 2,
+    "reason": "小众或个人站点，专业性不足"
+  },
+  "m.dianping.com": {
+    "score": 3,
+    "reason": "知名本地生活服务平台，内容体系完整且可信"
+  },
+  "dxy.com": {
+    "score": 3,
+    "reason": "医学领域知名专业网站"
+  },
+  "m.cnkang.com": {
+    "score": 2,
+    "reason": "小众站点，专业性一般，缺乏权威背书"
+  },
+  "nature.bio1000.com": {
+    "score": 1,
+    "reason": "域名可疑，内容不可信"
+  },
+  "m.mama.cn": {
+    "score": 3,
+    "reason": "母婴领域垂直网站，内容体系完整"
+  },
+  "zhuanlan.zhihu.com": {
+    "score": 3,
+    "reason": "知名平台，内容专业但非官方"
+  },
+  "www.youlai.cn": {
+    "score": 1,
+    "reason": "内容不可信，可能为非法或搬运"
+  },
+  "health.baidu.com": {
+    "score": 3,
+    "reason": "百度健康为大型平台子站点，内容体系完整且可信度较高"
+  },
+  "m.baicaolu.net": {
+    "score": 2,
+    "reason": "个人或小众站点，知名度低"
+  },
+  "blob.wenxiaobai.com": {
+    "score": 2,
+    "reason": "个人或小众站点，内容专一但缺乏权威背书"
+  },
+  "www.bio1000.com": {
+    "score": 2,
+    "reason": "内容较专一但知名度低"
+  },
+  "www.bohe.cn": {
+    "score": 3,
+    "reason": "行业垂直网站，内容体系完整"
+  },
+  "www.cnkang.com": {
+    "score": 3,
+    "reason": "健康领域垂直网站"
+  },
+  "www.3zhijk.com": {
+    "score": 2,
+    "reason": "小众站点，内容专一但缺乏权威背书"
+  },
+  "www.cn.emb-japan.go.jp": {
+    "score": 4,
+    "reason": "日本政府驻华使馆官网，官方权威机构"
+  },
+  "jp.china-embassy.gov.cn": {
+    "score": 4,
+    "reason": "政府官方机构网站"
+  },
+  "cs.mfa.gov.cn": {
+    "score": 4,
+    "reason": "政府官方网站，权威可信"
+  },
+  "www.shenyang.cn.emb-japan.go.jp": {
+    "score": 4,
+    "reason": "日本政府驻外机构官网"
+  },
+  "baijiahao.baidu.com": {
+    "score": 3,
+    "reason": "百度旗下内容平台，知名度高但内容质量参差"
+  },
+  "www.shanghai.cn.emb-japan.go.jp": {
+    "score": 4,
+    "reason": "日本政府机构官网"
+  },
+  "m.toutiao.com": {
+    "score": 3,
+    "reason": "领域内有影响力的专业门户"
+  },
+  "www.toutiao.com": {
+    "score": 3,
+    "reason": "行业门户，内容体系完整"
+  },
+  "www.lawtime.cn": {
+    "score": 3,
+    "reason": "法律领域垂直平台，内容体系完整"
+  },
+  "www.how234.com": {
+    "score": 2,
+    "reason": "个人或小团队运营，内容专一但缺乏权威背书"
+  },
+  "www.wsbedu.com": {
+    "score": 2,
+    "reason": "个人或小机构运营，知名度低且无权威背书"
+  },
+  "www.youqo.com": {
+    "score": 1,
+    "reason": "无可信度且内容不可靠"
+  },
+  "www.japan-travel.cn": {
+    "score": 2,
+    "reason": "小众旅游站点，缺乏权威背书"
+  },
+  "www.163.com": {
+    "score": 3,
+    "reason": "知名综合门户，内容体系完整"
+  },
+  "www.visasjapan.com": {
+    "score": 3,
+    "reason": "日本签证专业服务网站"
+  },
+  "www.64365.com": {
+    "score": 2,
+    "reason": "小众站点，缺乏权威背书"
+  },
+  "biu.qyer.com": {
+    "score": 3,
+    "reason": "旅游领域专业网站"
+  },
+  "www.jpchinapress.com": {
+    "score": 3,
+    "reason": "领域内有一定影响力的专业网站"
+  },
+  "lvshi.sogou.com": {
+    "score": 3,
+    "reason": "搜狗旗下法律频道，属大型平台垂直服务"
+  },
+  "www.sohu.com": {
+    "score": 3,
+    "reason": "知名综合门户网站，内容体系完整"
+  },
+  "s.alitrip.com": {
+    "score": 4,
+    "reason": "阿里巴巴旗下官方站点"
+  },
+  "mip.jdidi.cn": {
+    "score": 3,
+    "reason": "企业官网，专业性强"
+  },
+  "www.mofa.go.jp": {
+    "score": 4,
+    "reason": "政府机构官网，权威可信"
+  },
+  "www.extrabux.cn": {
+    "score": 2,
+    "reason": "个人或小众商业平台，专业性一般，缺乏权威背书"
+  },
+  "m.sohu.com": {
+    "score": 3,
+    "reason": "搜狐旗下新闻门户，知名度高且内容体系完整"
+  },
+  "new.qq.com": {
+    "score": 3,
+    "reason": "腾讯旗下新闻门户，知名度高且内容体系完整"
+  },
+  "www.qianzhengdaiban.com": {
+    "score": 2,
+    "reason": "个人或小机构运营，内容专一但缺乏权威背书"
+  },
+  "fad.zj.gov.cn": {
+    "score": 4,
+    "reason": "政府官网，权威可信"
+  },
+  "vacations.ceair.com": {
+    "score": 4,
+    "reason": "中国国航官方度假平台"
+  },
+  "www.dghire.com": {
+    "score": 2,
+    "reason": "内容较专一但知名度低"
+  },
+  "www.vietjetair.com": {
+    "score": 3,
+    "reason": "航空领域权威官网，内容专业且可信"
+  },
+  "baike.baidu.com": {
+    "score": 3,
+    "reason": "行业门户，内容体系完整"
+  },
+  "jasumo.com": {
+    "score": 2,
+    "reason": "小众站点，缺乏权威背书"
+  },
+  "news.cctv.com": {
+    "score": 4,
+    "reason": "国家级官方媒体，内容权威可靠"
+  },
+  "www.pbc.gov.cn": {
+    "score": 4,
+    "reason": "政府官方机构网站"
+  },
+  "camlmac.pbc.gov.cn": {
+    "score": 4,
+    "reason": "政府官方机构，权威可信"
+  },
+  "cn.bing.com": {
+    "score": 4,
+    "reason": "微软官方搜索引擎，顶级权威"
+  },
+  "sousuo.www.gov.cn": {
+    "score": 4,
+    "reason": "政府官网，权威且不可替代"
+  },
+  "money.rednet.cn": {
+    "score": 4,
+    "reason": "省级主流媒体官网，官方背书权威"
+  },
+  "m.thepaper.cn": {
+    "score": 3,
+    "reason": "主流新闻媒体，内容专业且可信"
+  },
+  "finance.people.com.cn": {
+    "score": 4,
+    "reason": "国家级官方媒体，内容权威可靠"
+  },
+  "m.nj.bendibao.com": {
+    "score": 3,
+    "reason": "领域内有影响力的行业门户"
+  },
+  "jjckb.xinhuanet.com": {
+    "score": 4,
+    "reason": "国家级媒体官网，内容权威可靠"
+  },
+  "finance.sina.com.cn": {
+    "score": 3,
+    "reason": "知名门户网站财经频道"
+  },
+  "news.qq.com": {
+    "score": 3,
+    "reason": "综合新闻门户，内容体系完整"
+  },
+  "so.html5.qq.com": {
+    "score": 3,
+    "reason": "腾讯旗下技术页面，企业权威性高"
+  },
+  "news.10jqka.com.cn": {
+    "score": 3,
+    "reason": "财经领域知名平台，内容专业且可信"
+  },
+  "www.21jingji.com": {
+    "score": 3,
+    "reason": "财经领域知名媒体，内容专业且可信"
+  },
+  "stcn.com": {
+    "score": 3,
+    "reason": "财经领域权威媒体，内容专业且可信"
+  },
+  "www.macromicro.me": {
+    "score": 2,
+    "reason": "小众个人站点，专业性一般"
+  },
+  "www.jujindata.com": {
+    "score": 3,
+    "reason": "数据领域专业网站"
+  },
+  "m.21jingji.com": {
+    "score": 3,
+    "reason": "财经领域知名媒体，内容专业可信"
+  },
+  "bbs.hupu.com": {
+    "score": 3,
+    "reason": "体育领域知名门户，内容专业且用户活跃"
+  },
+  "web.shobserver.com": {
+    "score": 3,
+    "reason": "领域内有影响力的专业媒体"
+  },
+  "sports.sina.cn": {
+    "score": 3,
+    "reason": "大型门户网站体育频道，内容专业且权威"
+  },
+  "www.reddit.com": {
+    "score": 3,
+    "reason": "知名社区平台，内容广泛但非专业领域"
+  },
+  "www.youtube.com": {
+    "score": 4,
+    "reason": "全球知名视频平台，谷歌旗下，内容权威且不可替代"
+  },
+  "weibo.com": {
+    "score": 3,
+    "reason": "领域内有影响力的社会化媒体平台"
+  },
+  "k.sina.com.cn": {
+    "score": 3,
+    "reason": "新浪旗下专业频道，内容体系完整且可信"
+  },
+  "www.662ok.com": {
+    "score": 2,
+    "reason": "小众站点，内容专一但缺乏权威背书"
+  },
+  "wap.tuohuangzu.com": {
+    "score": 2,
+    "reason": "小众站点，内容专一但缺乏权威背书"
+  },
+  "m.51dongshi.com": {
+    "score": 2,
+    "reason": "小众站点，知名度低"
+  },
+  "sz.bendibao.com": {
+    "score": 3,
+    "reason": "地方生活服务权威站点"
+  },
+  "mp.weixin.qq.com": {
+    "score": 4,
+    "reason": "腾讯官方平台，高可信度"
+  },
+  "tieba.baidu.com": {
+    "score": 3,
+    "reason": "知名平台，可信度高但专业性一般"
+  },
+  "www.bjnews.com.cn": {
+    "score": 3,
+    "reason": "地方主流新闻门户，内容专业且可信"
+  },
+  "www.youdao.com": {
+    "score": 3,
+    "reason": "知名语言服务网站，专业性强且可信度高"
+  },
+  "zh.wikipedia.org": {
+    "score": 3,
+    "reason": "领域内知名百科平台"
+  },
+  "www.maigoo.com": {
+    "score": 3,
+    "reason": "行业垂直网站，内容体系完整"
+  },
+  "www.hhtznews.com.cn": {
+    "score": 3,
+    "reason": "地方新闻门户，内容专业且可信"
+  },
+  "www.scpublic.cn": {
+    "score": 4,
+    "reason": "公共服务类官方站点"
+  },
+  "m.saiday.com": {
+    "score": 2,
+    "reason": "小众站点，知名度低且无权威背书"
+  },
+  "www.titan24.com": {
+    "score": 2,
+    "reason": "小众站点，缺乏权威背书"
+  },
+  "www.news.cn": {
+    "score": 4,
+    "reason": "国家级官方新闻机构"
+  },
+  "www.jiangmen.gov.cn": {
+    "score": 4,
+    "reason": "政府官网，官方权威来源"
+  },
+  "www.imefm.com": {
+    "score": 2,
+    "reason": "内容专一但知名度低，缺乏权威背书"
+  },
+  "www.olympics.com": {
+    "score": 4,
+    "reason": "官方机构运营，内容权威且不可替代"
+  },
+  "health.people.com.cn": {
+    "score": 4,
+    "reason": "官方机构或政府唯一发布源"
+  },
+  "www.pumch.cn": {
+    "score": 4,
+    "reason": "顶级权威机构官网"
+  },
+  "www.mskcc.org": {
+    "score": 4,
+    "reason": "顶级医疗机构官网，专业权威且可信"
+  },
+  "www.qzkfq.gov.cn": {
+    "score": 4,
+    "reason": "官方政府机构"
+  },
+  "cell.bio1000.com": {
+    "score": 2,
+    "reason": "域名结构可疑，内容专一但缺乏权威背书"
+  },
+  "bbs.bio1000.com": {
+    "score": 2,
+    "reason": "个人或小众社区，内容专一但缺乏权威背书"
+  },
+  "www.bangkokhospital.com": {
+    "score": 3,
+    "reason": "医疗领域专业机构，内容体系完整"
+  },
+  "www.mayoclinic.org": {
+    "score": 4,
+    "reason": "顶级权威，医疗领域权威机构"
+  },
+  "m.bohe.cn": {
+    "score": 2,
+    "reason": "小众企业站点，内容专一但缺乏权威背书"
+  },
+  "continentalhospitals.com": {
+    "score": 3,
+    "reason": "医疗领域专业网站"
+  },
+  "www.familydoctor.com.cn": {
+    "score": 3,
+    "reason": "医疗健康领域行业门户"
+  },
+  "www.tjzyefy.com": {
+    "score": 2,
+    "reason": "知名度低，可能为地方性站点"
+  },
+  "www.myzx.cn": {
+    "score": 3,
+    "reason": "领域内有一定影响力的专业网站"
+  },
+  "www.msdmanuals.cn": {
+    "score": 4,
+    "reason": "MSD Manual为医学领域权威指南，官网域名可信度高"
+  },
+  "www.miaoshou.net": {
+    "score": 2,
+    "reason": "小众站点，缺乏权威背书"
+  },
+  "g.fh21.com.cn": {
+    "score": 2,
+    "reason": "小众域名，缺乏权威背书"
+  },
+  "www.mfk.com": {
+    "score": 2,
+    "reason": "域名不常见，缺乏权威背书和广泛认知"
+  },
+  "m.youlai.cn": {
+    "score": 3,
+    "reason": "医疗健康领域垂直网站"
+  },
+  "www.chaonei.com": {
+    "score": 2,
+    "reason": "小众站点，缺乏权威背书"
+  },
+  "china.usembassy-china.org.cn": {
+    "score": 4,
+    "reason": "官方机构，权威可信"
+  },
+  "wsb.gxzf.gov.cn": {
+    "score": 4,
+    "reason": "政府机构官网，权威且不可替代"
+  },
+  "travel.state.gov": {
+    "score": 4,
+    "reason": "美国政府官方站点，权威可信"
+  },
+  "bic.cas.cn": {
+    "score": 4,
+    "reason": "中科院下属科研机构，官方权威来源"
+  },
+  "www.cafuc.edu.cn": {
+    "score": 4,
+    "reason": "教育机构官网，官方权威且可信"
+  },
+  "www.beimeigoufang.com": {
+    "score": 2,
+    "reason": "小众领域站点，知名度低"
+  },
+  "www.meiguo-qianzheng.com": {
+    "score": 2,
+    "reason": "个人或小机构运营，内容专一但缺乏权威背书"
+  },
+  "www.66law.cn": {
+    "score": 3,
+    "reason": "法律领域专业网站"
+  },
+  "www.us-qianzheng.com": {
+    "score": 1,
+    "reason": "域名可疑，可能为非法或盗版站点"
+  },
+  "www.testdaily.cn": {
+    "score": 2,
+    "reason": "小众领域站点，缺乏权威背书"
+  },
+  "meiguoxuqian.shop.m.liebiao.com": {
+    "score": 1,
+    "reason": "域名结构混乱，无可信背书"
+  },
+  "www.ustraveldocs.com": {
+    "score": 3,
+    "reason": "专业签证服务网站"
+  },
+  "www.cdvisa.com": {
+    "score": 2,
+    "reason": "个人或小机构运营，专业性一般"
+  },
+  "cdfao.chengdu.gov.cn": {
+    "score": 4,
+    "reason": "政府官网，官方权威来源"
+  },
+  "www.hti-ny.com": {
+    "score": 2,
+    "reason": "小众站点，缺乏权威背书"
+  },
+  "gehilaw.com": {
+    "score": 2,
+    "reason": "内容专一但知名度低，无权威背书"
+  },
+  "www.wendangxiazai.com": {
+    "score": 2,
+    "reason": "小众文档下载站，内容专一但缺乏权威背书"
+  },
+  "www.fuwuhk.com": {
+    "score": 1,
+    "reason": "域名可疑，无可信背书"
+  },
+  "www.sfasc.com.cn": {
+    "score": 3,
+    "reason": "行业门户或垂直网站"
+  },
+  "doc.guandang.net": {
+    "score": 3,
+    "reason": "领域内专业文档站点"
+  },
+  "www.gtzxhk.com": {
+    "score": 2,
+    "reason": "内容专一但知名度低，缺乏权威背书"
+  },
+  "usaeducations.org": {
+    "score": 2,
+    "reason": "小众教育类站点，缺乏权威背书"
+  },
+  "m.findlaw.cn": {
+    "score": 3,
+    "reason": "法律领域专业网站"
+  },
+  "m.kq7.com": {
+    "score": 2,
+    "reason": "小众站点，知名度低且无权威背书"
+  },
+  "wise.com": {
+    "score": 3,
+    "reason": "领域内有影响力的专业网站"
+  },
+  "www.honglingjin.co.uk": {
+    "score": 2,
+    "reason": "小众站点，缺乏权威背书"
+  },
+  "hk.usconsulate.gov": {
+    "score": 4,
+    "reason": "官方政府机构网站"
+  },
+  "www.med.tsinghua.edu.cn": {
+    "score": 4,
+    "reason": "清华大学官方医学站点，权威可信"
+  },
+  "www.cma.gov.cn": {
+    "score": 4,
+    "reason": "政府官方机构网站"
+  },
+  "www.bbc.com": {
+    "score": 4,
+    "reason": "国际知名媒体，官方权威可信"
+  },
+  "media.people.com.cn": {
+    "score": 4,
+    "reason": "官方媒体机构，权威可信"
+  },
+  "news.czt.cc": {
+    "score": 2,
+    "reason": "小众地方站点，内容专一但缺乏权威背书"
+  },
+  "www.15160.cn": {
+    "score": 2,
+    "reason": "小众站点，缺乏权威背书"
+  },
+  "m.ximalaya.com": {
+    "score": 3,
+    "reason": "音频领域知名平台，内容体系完整且可信"
+  },
+  "www.hxnews.com": {
+    "score": 3,
+    "reason": "地方新闻门户，内容专业但影响力有限"
+  },
+  "baike.sogou.com": {
+    "score": 3,
+    "reason": "搜狗百科属于知名平台，内容系统但非顶级权威"
+  },
+  "www.workstore.com.cn": {
+    "score": 2,
+    "reason": "小众企业网站，缺乏权威背书"
+  },
+  "m.baike.com": {
+    "score": 3,
+    "reason": "百度百科为知名垂直网站，内容体系完整且稳定"
+  },
+  "mbd.baidu.com": {
+    "score": 3,
+    "reason": "百度旗下移动搜索页面，行业代表性网站"
+  },
+  "m.mvq.cn": {
+    "score": 2,
+    "reason": "小众站点，专业性及知名度较低"
+  },
+  "i.maoyan.com": {
+    "score": 3,
+    "reason": "猫眼电影子站，领域内有影响力"
+  },
+  "www.cooboys.com": {
+    "score": 2,
+    "reason": "知名度低，可能为小众站点"
+  },
+  "www.168kk.com": {
+    "score": 2,
+    "reason": "内容较专一但缺乏权威背书"
+  },
+  "piaofang.maoyan.com": {
+    "score": 4,
+    "reason": "猫眼娱乐官方数据平台，权威可信"
+  },
+  "jyt.hubei.gov.cn": {
+    "score": 4,
+    "reason": "政府官方机构网站"
+  },
+  "www.moe.gov.cn": {
+    "score": 4,
+    "reason": "政府官方机构网站"
+  },
+  "www.haeea.cn": {
+    "score": 4,
+    "reason": "政府教育机构官网，权威可信"
+  },
+  "gaokao.chsi.com.cn": {
+    "score": 4,
+    "reason": "教育部官方高考信息平台"
+  },
+  "edu.sc.gov.cn": {
+    "score": 4,
+    "reason": "政府官网，权威可信"
+  },
+  "edu.dg.gov.cn": {
+    "score": 4,
+    "reason": "政府教育机构官网，权威可信"
+  },
+  "edu.sina.cn": {
+    "score": 3,
+    "reason": "新浪教育平台，行业代表性网站"
+  },
+  "www.eol.cn": {
+    "score": 3,
+    "reason": "教育领域垂直网站，内容体系完整"
+  },
+  "www.sneac.com": {
+    "score": 4,
+    "reason": "官方机构或政府唯一发布源"
+  }
+}

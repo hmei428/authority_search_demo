@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>权威Query查询系统</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <header class="header">
+            <h1>🔍 权威Query查询系统</h1>
+            <p class="subtitle">基于6个搜索引擎，智能筛选高相关性、高权威性的搜索结果</p>
+        </header>
+
+        <!-- 搜索框 -->
+        <div class="search-section">
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="queryInput"
+                    placeholder="输入查询内容，例如：考研数学二大纲"
+                    autocomplete="off"
+                >
+                <button id="searchBtn" onclick="handleSearch()">
+                    <span class="btn-text">搜索</span>
+                    <span class="btn-loading" style="display: none;">处理中...</span>
+                </button>
+            </div>
+
+            <!-- 引擎选择 -->
+            <div class="engine-selector">
+                <label class="selector-label">选择搜索引擎：</label>
+                <div class="engine-checkboxes">
+                    <label class="checkbox-item">
+                        <input type="checkbox" value="google" checked> Google
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" value="bing" checked> Bing
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" value="baidu" checked> Baidu
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" value="sogou" checked> Sogou
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" value="quark" checked> Quark
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" value="jina" checked> Jina
+                    </label>
+                </div>
+            </div>
+
+            <p class="search-hint">💡 系统将调用选中的搜索引擎，并通过AI打分筛选出相关性=2且权威性=4的结果</p>
+        </div>
+
+        <!-- 加载状态 -->
+        <div id="loadingSection" class="loading-section" style="display: none;">
+            <div class="loading-spinner"></div>
+            <div class="loading-steps">
+                <div class="step" id="step1">
+                    <span class="step-icon">⏳</span>
+                    <span class="step-text">正在调用6个搜索引擎...</span>
+                </div>
+                <div class="step" id="step2">
+                    <span class="step-icon">⏳</span>
+                    <span class="step-text">正在进行相关性打分...</span>
+                </div>
+                <div class="step" id="step3">
+                    <span class="step-icon">⏳</span>
+                    <span class="step-text">正在进行权威性打分...</span>
+                </div>
+                <div class="step" id="step4">
+                    <span class="step-icon">⏳</span>
+                    <span class="step-text">正在筛选结果...</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 统计信息 -->
+        <div id="statsSection" class="stats-section" style="display: none;">
+            <div class="stat-card">
+                <div class="stat-label">查询词</div>
+                <div class="stat-value" id="queryText">-</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">原始结果数</div>
+                <div class="stat-value" id="rawCount">0</div>
+            </div>
+            <div class="stat-card highlight">
+                <div class="stat-label">筛选后数量</div>
+                <div class="stat-value" id="filteredCount">0</div>
+            </div>
+        </div>
+
+        <!-- 结果展示 -->
+        <div id="resultsSection" class="results-section" style="display: none;">
+            <h2 class="results-title">
+                <span>📋 权威搜索结果</span>
+                <span class="results-subtitle">（相关性=2 且 权威性=4）</span>
+            </h2>
+            <div id="resultsList" class="results-list"></div>
+        </div>
+
+        <!-- 原始搜索结果 -->
+        <div id="rawResultsSection" class="raw-results-section" style="display: none;">
+            <h2 class="results-title">
+                <span>📊 各搜索引擎原始结果</span>
+                <span class="results-subtitle">（共60条，包含所有打分信息）</span>
+            </h2>
+
+            <!-- 引擎选择标签 -->
+            <div id="engineTabs" class="engine-tabs"></div>
+
+            <!-- 原始结果列表 -->
+            <div id="rawResultsList" class="raw-results-list"></div>
+        </div>
+
+        <!-- 错误提示 -->
+        <div id="errorSection" class="error-section" style="display: none;">
+            <div class="error-icon">⚠️</div>
+            <div class="error-message" id="errorMessage"></div>
+            <button onclick="location.reload()" class="retry-btn">重试</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
