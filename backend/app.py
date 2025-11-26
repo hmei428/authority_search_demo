@@ -6,6 +6,7 @@ from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 import sys
 import os
+from concurrent.futures import ThreadPoolExecutor
 
 # 添加服务路径
 sys.path.append(os.path.join(os.path.dirname(__file__), 'services'))
@@ -99,50 +100,48 @@ def process_query():
         print("\n[步骤 3/6] URL去重(保留content最长)...")
         search_results = deduplicate_by_url_keep_longest(search_results)
 
-        # 5. 权威性打分（先打分）
-        print("\n[步骤 4/6] 权威性打分...")
-        authority_scored = score_authority_batch(search_results)
+        # 5. 并行进行权威性与相关性打分
+        print("\n[步骤 4/6] 权威性与相关性打分(并行)...")
+        with ThreadPoolExecutor(max_workers=2) as executor:
+            authority_future = executor.submit(score_authority_batch, search_results)
+            relevance_future = executor.submit(score_relevance_batch, search_results, query)
+            authority_scored = authority_future.result()
+            relevance_scored = relevance_future.result()
 
-        # 6. 只对权威性=4的结果进行相关性打分
-        print("\n[步骤 5/6] 相关性打分(仅权威性=4)...")
-        high_authority = [r for r in authority_scored if r.get('authority_score') == 4]
-        print(f"  权威性=4的结果数: {len(high_authority)}/{len(authority_scored)}")
+        if len(authority_scored) != len(relevance_scored):
+            raise ValueError("权威性和相关性结果数量不一致")
 
-        if high_authority:
-            scored_results = score_relevance_batch(high_authority, query)
-        else:
-            print("  ⚠️  没有权威性=4的结果，跳过相关性打分")
-            scored_results = []
+        combined_results = []
+        for auth_result, rel_result in zip(authority_scored, relevance_scored):
+            combined = auth_result.copy()
+            combined['relevance_score'] = rel_result.get('relevance_score', -1)
+            combined['relevance_reason'] = rel_result.get('relevance_reason', '')
+            combined_results.append(combined)
 
-        # 为其他结果添加默认相关性分数
-        for r in authority_scored:
-            if r.get('authority_score') != 4:
-                r['relevance_score'] = -1
-                r['relevance_reason'] = '未打分(权威性<4)'
-
-        # 7. 筛选结果（相关性=2且权威性=4）
-        print("\n[步骤 6/6] 筛选结果...")
-        filtered = filter_results(scored_results, relevance_threshold=2, authority_threshold=4)
+        # 6. 筛选结果（相关性=2且权威性=4）
+        print("\n[步骤 5/6] 筛选结果...")
+        filtered = filter_results(combined_results, relevance_threshold=2, authority_threshold=4)
 
         # 7. 格式化结果
+        print("\n[步骤 6/6] 格式化输出...")
         final_results = format_final_results(filtered)
 
-        # 8. 统计信息（使用authority_scored，包含所有结果）
+        # 8. 统计信息（包含所有打分结果）
         stats = {
             'search_engines': search_stats['engines'],
             'relevance_distribution': {},
             'authority_distribution': {}
         }
 
-        for r in authority_scored:
+        for r in combined_results:
             rel_score = r.get('relevance_score', -1)
             auth_score = r.get('authority_score', -1)
             stats['relevance_distribution'][rel_score] = stats['relevance_distribution'].get(rel_score, 0) + 1
             stats['authority_distribution'][auth_score] = stats['authority_distribution'].get(auth_score, 0) + 1
 
-        # 9. 按引擎分组原始结果（使用authority_scored）
+        # 9. 按引擎分组原始结果
         raw_results_by_engine = {}
-        for r in authority_scored:
+        for r in combined_results:
             engine = r.get('engine', 'unknown')
             if engine not in raw_results_by_engine:
                 raw_results_by_engine[engine] = []

@@ -778,5 +778,129 @@
   "www.sneac.com": {
     "score": 4,
     "reason": "官方机构或政府唯一发布源"
+  },
+  "sh.people.com.cn": {
+    "score": 4,
+    "reason": "官方媒体，政府背景权威"
+  },
+  "gs.ctrip.com": {
+    "score": 4,
+    "reason": "携程官网，旅游领域权威"
+  },
+  "sports.sohu.com": {
+    "score": 4,
+    "reason": "搜狐体育为知名门户网站官方频道"
+  },
+  "xinwen.bjd.com.cn": {
+    "score": 4,
+    "reason": "官方媒体，政府背景权威"
+  },
+  "map.360.cn": {
+    "score": 3,
+    "reason": "360公司为知名互联网企业，地图服务属于其业务范围，具备一定专业性和可信度"
+  },
+  "www.hangzhou2022.cn": {
+    "score": 4,
+    "reason": "官方活动指定站点"
+  },
+  "wenwen.sogou.com": {
+    "score": 3,
+    "reason": "综合问答平台，知名度高但专业性一般"
+  },
+  "www.oushios.com.cn": {
+    "score": 2,
+    "reason": "知名度低，可能为小众站点"
+  },
+  "wb.beijing.gov.cn": {
+    "score": 4,
+    "reason": "政府官方网站，权威可信"
+  },
+  "www.gov.uk": {
+    "score": 4,
+    "reason": "政府官方网站，权威可信"
+  },
+  "touch.go.qunar.com": {
+    "score": 3,
+    "reason": "携程旗下旅游服务子站，行业代表性网站"
+  },
+  "www.oir.pku.edu.cn": {
+    "score": 4,
+    "reason": "北京大学官方子站点，权威可信"
+  },
+  "wenda.bendibao.com": {
+    "score": 3,
+    "reason": "属于行业代表性网站"
+  },
+  "www.yiqiliuxue.com": {
+    "score": 1,
+    "reason": "内容不可信或非法"
+  },
+  "uk.125visa.com": {
+    "score": 1,
+    "reason": "域名结构可疑，可能为非法或搬运站点"
+  },
+  "visaeta.uk": {
+    "score": 2,
+    "reason": "小众站点，缺乏权威背书"
+  },
+  "wap.idp.cn": {
+    "score": 4,
+    "reason": "可能为官方机构身份提供商"
+  },
+  "post.smzdm.com": {
+    "score": 2,
+    "reason": "内容较专一但知名度低"
+  },
+  "m.51test.net": {
+    "score": 2,
+    "reason": "小众测试类站点，无权威背书"
+  },
+  "99ielts.com": {
+    "score": 2,
+    "reason": "小众教育类站点，知名度低且无权威背书"
+  },
+  "www.vfsglobal.com": {
+    "score": 3,
+    "reason": "签证服务领域权威机构"
+  },
+  "liuxue.hujiang.com": {
+    "score": 3,
+    "reason": "教育领域垂直网站，内容专业且知名度较高"
+  },
+  "zhivisaworld.com": {
+    "score": 2,
+    "reason": "小众站点，缺乏权威背书"
+  },
+  "shengenqianzheng.com": {
+    "score": 2,
+    "reason": "个人或小机构运营，无权威背书"
+  },
+  "www.51offer.com": {
+    "score": 3,
+    "reason": "留学领域垂直网站，内容专业且有一定知名度"
+  },
+  "www.huochegu.com": {
+    "score": 2,
+    "reason": "小众垂直网站，专业性一般"
+  },
+  "itf.mafengwo.cn": {
+    "score": 3,
+    "reason": "马蜂窝旗下旅游资讯站，专业可信"
+  },
+  "www.yinglunka.com": {
+    "score": 2,
+    "reason": "小众站点，缺乏权威背书"
+  },
+  "www.htiedu-uk.com": {
+    "score": 3,
+    "reason": "教育领域垂直网站"
+  },
+  "visa.vfsglobal.com": {
+    "score": 3,
+    "reason": "签证服务专业网站"
+  },
+  "liuxue.xdf.cn": {
+    "score": 3,
+    "reason": "新东方旗下留学平台，专业性强且可信度高"
   }
 }
