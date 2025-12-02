@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>权威Query查询系统</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- 使用相对路径以便在被代理的子路径下也能正确加载静态资源 -->
+    <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
     <div class="container">
@@ -127,6 +128,6 @@
         </div>
     </div>
 
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="static/js/main.js"></script>
 </body>
 </html>

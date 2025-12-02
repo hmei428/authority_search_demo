@@ -46,7 +46,8 @@ async function handleSearch() {
 
     try {
         // 发送请求
-        const response = await fetch('/api/query', {
+        // 使用相对路径以兼容 WebIDE 等有代理前缀的环境
+        const response = await fetch('api/query', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
