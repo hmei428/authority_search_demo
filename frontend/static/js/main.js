@@ -101,9 +101,30 @@ function displayResults(data) {
             </div>
         `;
     } else {
-        data.results.forEach((result, index) => {
-            const resultItem = createResultItem(result, index + 1);
+        // 添加分组标题
+        let lastAuthorityScore = null;
+        let lastRelevanceScore = null;
+        let resultIndex = 1;
+
+        data.results.forEach((result) => {
+            // 检查是否需要添加权威性分组标题
+            if (result.authority_score !== lastAuthorityScore) {
+                const authorityHeader = createGroupHeader(result.authority_score);
+                resultsList.appendChild(authorityHeader);
+                lastAuthorityScore = result.authority_score;
+                lastRelevanceScore = null; // 重置相关性标记
+            }
+
+            // 检查是否需要添加相关性子分组标题
+            if (result.relevance_score !== lastRelevanceScore) {
+                const relevanceHeader = createSubGroupHeader(result.relevance_score);
+                resultsList.appendChild(relevanceHeader);
+                lastRelevanceScore = result.relevance_score;
+            }
+
+            const resultItem = createResultItem(result, resultIndex);
             resultsList.appendChild(resultItem);
+            resultIndex++;
         });
     }
 
@@ -122,6 +143,75 @@ function displayResults(data) {
             block: 'start'
         });
     }, 100);
+}
+
+// 创建权威性分组标题
+function createGroupHeader(authorityScore) {
+    const div = document.createElement('div');
+    div.className = 'group-header';
+
+    const authorityLabels = {
+        4: '🏆 权威性档位4 - 最高权威',
+        3: '⭐ 权威性档位3 - 高权威',
+        2: '📌 权威性档位2 - 中等权威',
+        1: '📋 权威性档位1 - 一般权威',
+        0: '❓ 权威性档位0 - 未评分',
+        '-1': '❓ 权威性档位-1 - 评分失败'
+    };
+
+    div.innerHTML = `
+        <div style="
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin: 30px 0 15px 0;
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+        ">
+            ${authorityLabels[authorityScore] || `权威性: ${authorityScore}`}
+        </div>
+    `;
+
+    return div;
+}
+
+// 创建相关性子分组标题
+function createSubGroupHeader(relevanceScore) {
+    const div = document.createElement('div');
+    div.className = 'subgroup-header';
+
+    const relevanceLabels = {
+        2: '💯 相关性档位2 - 高度相关',
+        1: '✅ 相关性档位1 - 部分相关',
+        0: '⚪ 相关性档位0 - 不相关',
+        '-1': '❓ 相关性档位-1 - 评分失败'
+    };
+
+    const colors = {
+        2: '#10b981',
+        1: '#f59e0b',
+        0: '#6b7280',
+        '-1': '#ef4444'
+    };
+
+    div.innerHTML = `
+        <div style="
+            background: ${colors[relevanceScore] || '#6b7280'};
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin: 15px 0 10px 20px;
+            display: inline-block;
+        ">
+            ${relevanceLabels[relevanceScore] || `相关性: ${relevanceScore}`}
+        </div>
+    `;
+
+    return div;
 }
 
 // 创建结果项

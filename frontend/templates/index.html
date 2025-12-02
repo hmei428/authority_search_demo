@@ -55,7 +55,7 @@
                 </div>
             </div>
 
-            <p class="search-hint">💡 系统将调用选中的搜索引擎，并通过AI打分筛选出相关性=2且权威性=4的结果</p>
+            <p class="search-hint">💡 系统将调用选中的搜索引擎，通过AI打分后按权威性(4→3→2→1)和相关性(2→1→0)排序展示所有结果</p>
         </div>
 
         <!-- 加载状态 -->
@@ -92,7 +92,7 @@
                 <div class="stat-value" id="rawCount">0</div>
             </div>
             <div class="stat-card highlight">
-                <div class="stat-label">筛选后数量</div>
+                <div class="stat-label">排序后数量</div>
                 <div class="stat-value" id="filteredCount">0</div>
             </div>
         </div>
@@ -101,7 +101,7 @@
         <div id="resultsSection" class="results-section" style="display: none;">
             <h2 class="results-title">
                 <span>📋 权威搜索结果</span>
-                <span class="results-subtitle">（相关性=2 且 权威性=4）</span>
+                <span class="results-subtitle">（按权威性 4→3→2→1，相关性 2→1→0 排序）</span>
             </h2>
             <div id="resultsList" class="results-list"></div>
         </div>

@@ -118,13 +118,20 @@ def process_query():
             combined['relevance_reason'] = rel_result.get('relevance_reason', '')
             combined_results.append(combined)
 
-        # 6. 筛选结果（相关性=2且权威性=4）
-        print("\n[步骤 5/6] 筛选结果...")
-        filtered = filter_results(combined_results, relevance_threshold=2, authority_threshold=4)
+        # 6. 排序结果（权威性降序 -> 相关性降序）
+        print("\n[步骤 5/6] 排序结果...")
+        # 先按权威性降序，再按相关性降序
+        sorted_results = sorted(
+            combined_results,
+            key=lambda x: (
+                -x.get('authority_score', -1),  # 权威性降序（4->3->2->1）
+                -x.get('relevance_score', -1)   # 相关性降序（2->1->0）
+            )
+        )
 
         # 7. 格式化结果
         print("\n[步骤 6/6] 格式化输出...")
-        final_results = format_final_results(filtered)
+        final_results = format_final_results(sorted_results)
 
         # 8. 统计信息（包含所有打分结果）
         stats = {
@@ -159,7 +166,8 @@ def process_query():
         print(f"\n{'='*60}")
         print(f"处理完成!")
         print(f"  原始结果数: {len(search_results)}")
-        print(f"  筛选后数量: {len(final_results)}")
+        print(f"  排序后数量: {len(final_results)}")
+        print(f"  排序规则: 权威性(4→3→2→1) -> 相关性(2→1→0)")
         print(f"{'='*60}\n")
 
         # 10. 返回结果
